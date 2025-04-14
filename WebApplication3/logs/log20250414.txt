@@ -1,241 +1,120 @@
-2025-04-14 12:51:32.798 +03:00 [DBG] Hosting starting
-2025-04-14 12:51:32.834 +03:00 [DBG] Middleware configuration started with options: {AllowedHosts = *, AllowEmptyHosts = True, IncludeFailureMessage = True}
-2025-04-14 12:51:32.836 +03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
-2025-04-14 12:51:32.842 +03:00 [INF] Now listening on: http://localhost:5249
-2025-04-14 12:51:32.842 +03:00 [DBG] Loaded hosting startup assembly WebApplication3
-2025-04-14 12:51:32.842 +03:00 [INF] Application started. Press Ctrl+C to shut down.
-2025-04-14 12:51:32.842 +03:00 [INF] Hosting environment: Development
-2025-04-14 12:51:32.843 +03:00 [INF] Content root path: /Users/Danil/RiderProjects/WebApplication3/WebApplication3
-2025-04-14 12:51:32.843 +03:00 [DBG] Hosting started
-2025-04-14 12:51:56.558 +03:00 [DBG] Connection id "0HNBR77V448ML" accepted.
-2025-04-14 12:51:56.559 +03:00 [DBG] Connection id "0HNBR77V448ML" started.
-2025-04-14 12:51:56.559 +03:00 [DBG] Connection id "0HNBR77V448MM" accepted.
-2025-04-14 12:51:56.559 +03:00 [DBG] Connection id "0HNBR77V448MM" started.
-2025-04-14 12:51:56.585 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5249/tasks - null null
-2025-04-14 12:51:56.640 +03:00 [DBG] 1 candidate(s) found for the request path '/tasks'
-2025-04-14 12:51:56.641 +03:00 [DBG] Request matched endpoint 'HTTP: GET /tasks'
-2025-04-14 12:51:56.641 +03:00 [WRN] Failed to determine the https port for redirect.
-2025-04-14 12:51:56.643 +03:00 [INF] Executing endpoint 'HTTP: GET /tasks'
-2025-04-14 12:51:56.644 +03:00 [INF] No tasks available.
-2025-04-14 12:51:56.648 +03:00 [INF] Executed endpoint 'HTTP: GET /tasks'
-2025-04-14 12:51:56.648 +03:00 [DBG] Connection id "0HNBR77V448ML" completed keep alive response.
-2025-04-14 12:51:56.649 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5249/tasks - 200 null application/json; charset=utf-8 66.9035ms
-2025-04-14 12:51:59.383 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5249/tasks/asd - null null
-2025-04-14 12:51:59.384 +03:00 [DBG] 1 candidate(s) found for the request path '/tasks/asd'
-2025-04-14 12:51:59.384 +03:00 [DBG] Request matched endpoint '405 HTTP Method Not Supported'
-2025-04-14 12:51:59.385 +03:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
-2025-04-14 12:51:59.385 +03:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
-2025-04-14 12:51:59.385 +03:00 [DBG] Connection id "0HNBR77V448ML" completed keep alive response.
-2025-04-14 12:51:59.385 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5249/tasks/asd - 405 0 null 2.1273ms
-2025-04-14 12:52:05.033 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5249/tasks - null null
-2025-04-14 12:52:05.034 +03:00 [DBG] 1 candidate(s) found for the request path '/tasks'
-2025-04-14 12:52:05.034 +03:00 [DBG] Request matched endpoint 'HTTP: GET /tasks'
-2025-04-14 12:52:05.034 +03:00 [INF] Executing endpoint 'HTTP: GET /tasks'
-2025-04-14 12:52:05.035 +03:00 [INF] No tasks available.
-2025-04-14 12:52:05.035 +03:00 [INF] Executed endpoint 'HTTP: GET /tasks'
-2025-04-14 12:52:05.035 +03:00 [DBG] Connection id "0HNBR77V448ML" completed keep alive response.
-2025-04-14 12:52:05.036 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5249/tasks - 200 null application/json; charset=utf-8 3.5763ms
-2025-04-14 12:52:19.320 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5249/swagger - null null
-2025-04-14 12:52:19.322 +03:00 [DBG] No candidates found for the request path '/swagger'
-2025-04-14 12:52:19.322 +03:00 [DBG] Request did not match any endpoints
-2025-04-14 12:52:19.324 +03:00 [DBG] Connection id "0HNBR77V448ML" completed keep alive response.
-2025-04-14 12:52:19.326 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5249/swagger - 404 0 null 5.8263ms
-2025-04-14 12:52:19.327 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5249/swagger, Response status code: 404
-2025-04-14 12:53:15.345 +03:00 [INF] Application is shutting down...
-2025-04-14 12:53:15.346 +03:00 [DBG] Hosting stopping
-2025-04-14 12:53:15.355 +03:00 [DBG] Connection id "0HNBR77V448MM" disconnecting.
-2025-04-14 12:53:15.355 +03:00 [DBG] Connection id "0HNBR77V448ML" disconnecting.
-2025-04-14 12:53:15.357 +03:00 [DBG] Connection id "0HNBR77V448ML" stopped.
-2025-04-14 12:53:15.357 +03:00 [DBG] Connection id "0HNBR77V448MM" stopped.
-2025-04-14 12:53:15.360 +03:00 [DBG] Connection id "0HNBR77V448ML" sending FIN because: "The Socket transport's send loop completed gracefully."
-2025-04-14 12:53:15.360 +03:00 [DBG] Connection id "0HNBR77V448MM" sending FIN because: "The Socket transport's send loop completed gracefully."
-2025-04-14 12:53:15.364 +03:00 [DBG] Hosting stopped
-2025-04-14 12:53:17.799 +03:00 [DBG] Hosting starting
-2025-04-14 12:53:17.850 +03:00 [DBG] Middleware configuration started with options: {AllowedHosts = *, AllowEmptyHosts = True, IncludeFailureMessage = True}
-2025-04-14 12:53:17.852 +03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
-2025-04-14 12:53:17.857 +03:00 [INF] Now listening on: http://localhost:5249
-2025-04-14 12:53:17.857 +03:00 [DBG] Loaded hosting startup assembly WebApplication3
-2025-04-14 12:53:17.857 +03:00 [INF] Application started. Press Ctrl+C to shut down.
-2025-04-14 12:53:17.858 +03:00 [INF] Hosting environment: Development
-2025-04-14 12:53:17.858 +03:00 [INF] Content root path: /Users/Danil/RiderProjects/WebApplication3/WebApplication3
-2025-04-14 12:53:17.858 +03:00 [DBG] Hosting started
-2025-04-14 12:53:22.926 +03:00 [DBG] Connection id "0HNBR78ORPQR3" accepted.
-2025-04-14 12:53:22.927 +03:00 [DBG] Connection id "0HNBR78ORPQR4" accepted.
-2025-04-14 12:53:22.927 +03:00 [DBG] Connection id "0HNBR78ORPQR3" started.
-2025-04-14 12:53:22.927 +03:00 [DBG] Connection id "0HNBR78ORPQR4" started.
-2025-04-14 12:53:22.947 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5249/ - null null
-2025-04-14 12:53:23.011 +03:00 [DBG] 1 candidate(s) found for the request path '/'
-2025-04-14 12:53:23.012 +03:00 [DBG] Request matched endpoint 'HTTP: GET /'
-2025-04-14 12:53:23.025 +03:00 [DBG] Connection id "0HNBR78ORPQR3" completed keep alive response.
-2025-04-14 12:53:23.026 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5249/ - 301 0 null 81.7341ms
-2025-04-14 12:53:23.028 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5249/index.html - null null
-2025-04-14 12:53:23.028 +03:00 [DBG] No candidates found for the request path '/index.html'
-2025-04-14 12:53:23.028 +03:00 [DBG] Request did not match any endpoints
-2025-04-14 12:53:23.065 +03:00 [DBG] Connection id "0HNBR78ORPQR3" completed keep alive response.
-2025-04-14 12:53:23.065 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5249/index.html - 200 null text/html;charset=utf-8 37.3944ms
-2025-04-14 12:53:23.086 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5249/swagger-ui.css - null null
-2025-04-14 12:53:23.088 +03:00 [DBG] No candidates found for the request path '/swagger-ui.css'
-2025-04-14 12:53:23.088 +03:00 [DBG] Request did not match any endpoints
-2025-04-14 12:53:23.090 +03:00 [DBG] Connection id "0HNBR78ORPQR5" accepted.
-2025-04-14 12:53:23.090 +03:00 [DBG] Connection id "0HNBR78ORPQR6" accepted.
-2025-04-14 12:53:23.090 +03:00 [DBG] Connection id "0HNBR78ORPQR7" accepted.
-2025-04-14 12:53:23.090 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5249/index.css - null null
-2025-04-14 12:53:23.091 +03:00 [DBG] No candidates found for the request path '/index.css'
-2025-04-14 12:53:23.091 +03:00 [DBG] Request did not match any endpoints
-2025-04-14 12:53:23.091 +03:00 [DBG] Connection id "0HNBR78ORPQR5" started.
-2025-04-14 12:53:23.091 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5249/swagger-ui-bundle.js - null null
-2025-04-14 12:53:23.091 +03:00 [DBG] No candidates found for the request path '/swagger-ui-bundle.js'
-2025-04-14 12:53:23.092 +03:00 [DBG] Request did not match any endpoints
-2025-04-14 12:53:23.093 +03:00 [DBG] Connection id "0HNBR78ORPQR6" started.
-2025-04-14 12:53:23.093 +03:00 [DBG] Connection id "0HNBR78ORPQR7" started.
-2025-04-14 12:53:23.093 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5249/index.js - null null
-2025-04-14 12:53:23.093 +03:00 [DBG] No candidates found for the request path '/index.js'
-2025-04-14 12:53:23.093 +03:00 [DBG] Request did not match any endpoints
-2025-04-14 12:53:23.093 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5249/swagger-ui-standalone-preset.js - null null
-2025-04-14 12:53:23.094 +03:00 [DBG] No candidates found for the request path '/swagger-ui-standalone-preset.js'
-2025-04-14 12:53:23.095 +03:00 [DBG] Request did not match any endpoints
-2025-04-14 12:53:23.095 +03:00 [INF] Sending file. Request path: '/index.css'. Physical path: 'N/A'
-2025-04-14 12:53:23.095 +03:00 [DBG] Connection id "0HNBR78ORPQR4" completed keep alive response.
-2025-04-14 12:53:23.095 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5249/index.css - 200 202 text/css 4.9333ms
-2025-04-14 12:53:23.100 +03:00 [DBG] Connection id "0HNBR78ORPQR7" completed keep alive response.
-2025-04-14 12:53:23.101 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5249/index.js - 200 null application/javascript;charset=utf-8 7.8227ms
-2025-04-14 12:53:23.102 +03:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
-2025-04-14 12:53:23.103 +03:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
-2025-04-14 12:53:23.109 +03:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
-2025-04-14 12:53:23.110 +03:00 [DBG] Connection id "0HNBR78ORPQR5" completed keep alive response.
-2025-04-14 12:53:23.110 +03:00 [DBG] Connection id "0HNBR78ORPQR3" completed keep alive response.
-2025-04-14 12:53:23.111 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5249/swagger-ui-bundle.js - 200 1466908 text/javascript 19.1784ms
-2025-04-14 12:53:23.111 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5249/swagger-ui.css - 200 154949 text/css 24.753ms
-2025-04-14 12:53:23.111 +03:00 [DBG] Connection id "0HNBR78ORPQR6" completed keep alive response.
-2025-04-14 12:53:23.111 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5249/swagger-ui-standalone-preset.js - 200 229223 text/javascript 18.5244ms
-2025-04-14 12:53:23.190 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5249/swagger/v1/swagger.json - null null
-2025-04-14 12:53:23.191 +03:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
-2025-04-14 12:53:23.191 +03:00 [DBG] Request did not match any endpoints
-2025-04-14 12:53:23.196 +03:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
-2025-04-14 12:53:23.200 +03:00 [DBG] Executing API description provider 'EndpointMetadataApiDescriptionProvider' from assembly Microsoft.AspNetCore.Mvc.ApiExplorer v9.0.0.0.
-2025-04-14 12:53:23.203 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5249/favicon-32x32.png - null null
-2025-04-14 12:53:23.204 +03:00 [DBG] No candidates found for the request path '/favicon-32x32.png'
-2025-04-14 12:53:23.204 +03:00 [DBG] Request did not match any endpoints
-2025-04-14 12:53:23.204 +03:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
-2025-04-14 12:53:23.204 +03:00 [DBG] Connection id "0HNBR78ORPQR6" completed keep alive response.
-2025-04-14 12:53:23.204 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5249/favicon-32x32.png - 200 628 image/png 0.9411ms
-2025-04-14 12:53:23.267 +03:00 [DBG] Connection id "0HNBR78ORPQR5" completed keep alive response.
-2025-04-14 12:53:23.268 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5249/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 77.1133ms
-2025-04-14 12:53:43.012 +03:00 [INF] Application is shutting down...
-2025-04-14 12:53:43.014 +03:00 [DBG] Hosting stopping
-2025-04-14 12:53:43.027 +03:00 [DBG] Connection id "0HNBR78ORPQR7" disconnecting.
-2025-04-14 12:53:43.027 +03:00 [DBG] Connection id "0HNBR78ORPQR4" disconnecting.
-2025-04-14 12:53:43.027 +03:00 [DBG] Connection id "0HNBR78ORPQR5" disconnecting.
-2025-04-14 12:53:43.027 +03:00 [DBG] Connection id "0HNBR78ORPQR6" disconnecting.
-2025-04-14 12:53:43.027 +03:00 [DBG] Connection id "0HNBR78ORPQR3" disconnecting.
-2025-04-14 12:53:43.028 +03:00 [DBG] Connection id "0HNBR78ORPQR7" stopped.
-2025-04-14 12:53:43.028 +03:00 [DBG] Connection id "0HNBR78ORPQR5" stopped.
-2025-04-14 12:53:43.028 +03:00 [DBG] Connection id "0HNBR78ORPQR3" stopped.
-2025-04-14 12:53:43.028 +03:00 [DBG] Connection id "0HNBR78ORPQR4" stopped.
-2025-04-14 12:53:43.028 +03:00 [DBG] Connection id "0HNBR78ORPQR6" stopped.
-2025-04-14 12:53:43.029 +03:00 [DBG] Connection id "0HNBR78ORPQR4" sending FIN because: "The Socket transport's send loop completed gracefully."
-2025-04-14 12:53:43.029 +03:00 [DBG] Connection id "0HNBR78ORPQR5" sending FIN because: "The Socket transport's send loop completed gracefully."
-2025-04-14 12:53:43.029 +03:00 [DBG] Connection id "0HNBR78ORPQR7" sending FIN because: "The Socket transport's send loop completed gracefully."
-2025-04-14 12:53:43.029 +03:00 [DBG] Connection id "0HNBR78ORPQR3" sending FIN because: "The Socket transport's send loop completed gracefully."
-2025-04-14 12:53:43.029 +03:00 [DBG] Connection id "0HNBR78ORPQR6" sending FIN because: "The Socket transport's send loop completed gracefully."
-2025-04-14 12:53:43.033 +03:00 [DBG] Hosting stopped
-2025-04-14 12:53:44.688 +03:00 [DBG] Hosting starting
-2025-04-14 12:53:44.758 +03:00 [DBG] Middleware configuration started with options: {AllowedHosts = *, AllowEmptyHosts = True, IncludeFailureMessage = True}
-2025-04-14 12:53:44.760 +03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
-2025-04-14 12:53:44.767 +03:00 [INF] Now listening on: http://localhost:5249
-2025-04-14 12:53:44.767 +03:00 [DBG] Loaded hosting startup assembly WebApplication3
-2025-04-14 12:53:44.767 +03:00 [INF] Application started. Press Ctrl+C to shut down.
-2025-04-14 12:53:44.767 +03:00 [INF] Hosting environment: Development
-2025-04-14 12:53:44.767 +03:00 [INF] Content root path: /Users/Danil/RiderProjects/WebApplication3/WebApplication3
-2025-04-14 12:53:44.767 +03:00 [DBG] Hosting started
-2025-04-14 12:53:45.336 +03:00 [DBG] Connection id "0HNBR78VHGT03" accepted.
-2025-04-14 12:53:45.337 +03:00 [DBG] Connection id "0HNBR78VHGT03" started.
-2025-04-14 12:53:45.338 +03:00 [DBG] Connection id "0HNBR78VHGT04" accepted.
-2025-04-14 12:53:45.338 +03:00 [DBG] Connection id "0HNBR78VHGT04" started.
-2025-04-14 12:53:45.396 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5249/swagger/v1/swagger.json - null null
-2025-04-14 12:53:45.443 +03:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
-2025-04-14 12:53:45.443 +03:00 [DBG] Request did not match any endpoints
-2025-04-14 12:53:45.456 +03:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
-2025-04-14 12:53:45.457 +03:00 [DBG] Executing API description provider 'EndpointMetadataApiDescriptionProvider' from assembly Microsoft.AspNetCore.Mvc.ApiExplorer v9.0.0.0.
-2025-04-14 12:53:45.510 +03:00 [DBG] Connection id "0HNBR78VHGT03" completed keep alive response.
-2025-04-14 12:53:45.511 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5249/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 117.2355ms
-2025-04-14 12:53:48.249 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5249/test - null null
-2025-04-14 12:53:48.254 +03:00 [DBG] 1 candidate(s) found for the request path '/test'
-2025-04-14 12:53:48.256 +03:00 [DBG] Request matched endpoint 'HTTP: GET /test'
-2025-04-14 12:53:48.265 +03:00 [DBG] Static files was skipped as the request already matched an endpoint.
-2025-04-14 12:53:48.266 +03:00 [WRN] Failed to determine the https port for redirect.
-2025-04-14 12:53:48.268 +03:00 [INF] Executing endpoint 'HTTP: GET /test'
-2025-04-14 12:53:48.269 +03:00 [INF] test
-2025-04-14 12:53:48.269 +03:00 [INF] test(Serilog).
-2025-04-14 12:53:48.271 +03:00 [INF] Executed endpoint 'HTTP: GET /test'
-2025-04-14 12:53:48.271 +03:00 [DBG] Connection id "0HNBR78VHGT03" completed keep alive response.
-2025-04-14 12:53:48.271 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5249/test - 200 null text/plain; charset=utf-8 22.912ms
-2025-04-14 12:53:52.663 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5249/tasks - null null
-2025-04-14 12:53:52.663 +03:00 [DBG] 1 candidate(s) found for the request path '/tasks'
-2025-04-14 12:53:52.664 +03:00 [DBG] Request matched endpoint 'HTTP: GET /tasks'
-2025-04-14 12:53:52.665 +03:00 [DBG] Static files was skipped as the request already matched an endpoint.
-2025-04-14 12:53:52.665 +03:00 [INF] Executing endpoint 'HTTP: GET /tasks'
-2025-04-14 12:53:52.665 +03:00 [INF] No tasks available.
-2025-04-14 12:53:52.667 +03:00 [INF] Executed endpoint 'HTTP: GET /tasks'
-2025-04-14 12:53:52.667 +03:00 [DBG] Connection id "0HNBR78VHGT03" completed keep alive response.
-2025-04-14 12:53:52.667 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5249/tasks - 200 null application/json; charset=utf-8 4.2955ms
-2025-04-14 12:53:54.947 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5249/tasks - null null
-2025-04-14 12:53:54.948 +03:00 [DBG] 1 candidate(s) found for the request path '/tasks'
-2025-04-14 12:53:54.948 +03:00 [DBG] Request matched endpoint 'HTTP: GET /tasks'
-2025-04-14 12:53:54.948 +03:00 [DBG] Static files was skipped as the request already matched an endpoint.
-2025-04-14 12:53:54.948 +03:00 [INF] Executing endpoint 'HTTP: GET /tasks'
-2025-04-14 12:53:54.948 +03:00 [INF] No tasks available.
-2025-04-14 12:53:54.951 +03:00 [INF] Executed endpoint 'HTTP: GET /tasks'
-2025-04-14 12:53:54.953 +03:00 [DBG] Connection id "0HNBR78VHGT03" completed keep alive response.
-2025-04-14 12:53:54.953 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5249/tasks - 200 null application/json; charset=utf-8 6.1922ms
-2025-04-14 12:53:59.772 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5249/tasks?taskName=test - null 0
-2025-04-14 12:53:59.772 +03:00 [DBG] 1 candidate(s) found for the request path '/tasks'
-2025-04-14 12:53:59.772 +03:00 [DBG] Request matched endpoint 'HTTP: POST /tasks'
-2025-04-14 12:53:59.772 +03:00 [DBG] Static files was skipped as the request already matched an endpoint.
-2025-04-14 12:53:59.772 +03:00 [INF] Executing endpoint 'HTTP: POST /tasks'
-2025-04-14 12:53:59.778 +03:00 [INF] Task added: test
-2025-04-14 12:53:59.780 +03:00 [INF] Setting HTTP status code 200.
-2025-04-14 12:53:59.786 +03:00 [INF] Writing value of type '<>f__AnonymousType0`1' as Json.
-2025-04-14 12:53:59.786 +03:00 [INF] Executed endpoint 'HTTP: POST /tasks'
-2025-04-14 12:53:59.786 +03:00 [DBG] Connection id "0HNBR78VHGT03" completed keep alive response.
-2025-04-14 12:53:59.786 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5249/tasks?taskName=test - 200 null application/json; charset=utf-8 14.8362ms
-2025-04-14 12:54:06.443 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5249/tasks - null null
-2025-04-14 12:54:06.443 +03:00 [DBG] 1 candidate(s) found for the request path '/tasks'
-2025-04-14 12:54:06.443 +03:00 [DBG] Request matched endpoint 'HTTP: GET /tasks'
-2025-04-14 12:54:06.443 +03:00 [DBG] Static files was skipped as the request already matched an endpoint.
-2025-04-14 12:54:06.443 +03:00 [INF] Executing endpoint 'HTTP: GET /tasks'
-2025-04-14 12:54:06.443 +03:00 [INF] Listing tasks...
-2025-04-14 12:54:06.443 +03:00 [INF] Executed endpoint 'HTTP: GET /tasks'
-2025-04-14 12:54:06.443 +03:00 [DBG] Connection id "0HNBR78VHGT03" completed keep alive response.
-2025-04-14 12:54:06.443 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5249/tasks - 200 null application/json; charset=utf-8 0.7936ms
-2025-04-14 12:54:10.532 +03:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:5249/tasks/0 - null null
-2025-04-14 12:54:10.533 +03:00 [DBG] 1 candidate(s) found for the request path '/tasks/0'
-2025-04-14 12:54:10.535 +03:00 [DBG] Endpoint 'HTTP: DELETE /tasks/{index}' with route pattern '/tasks/{index}' is valid for the request path '/tasks/0'
-2025-04-14 12:54:10.536 +03:00 [DBG] Request matched endpoint 'HTTP: DELETE /tasks/{index}'
-2025-04-14 12:54:10.536 +03:00 [DBG] Static files was skipped as the request already matched an endpoint.
-2025-04-14 12:54:10.536 +03:00 [INF] Executing endpoint 'HTTP: DELETE /tasks/{index}'
-2025-04-14 12:54:10.537 +03:00 [INF] Task removed: test
-2025-04-14 12:54:10.538 +03:00 [INF] Setting HTTP status code 200.
-2025-04-14 12:54:10.538 +03:00 [INF] Writing value of type '<>f__AnonymousType0`1' as Json.
-2025-04-14 12:54:10.538 +03:00 [INF] Executed endpoint 'HTTP: DELETE /tasks/{index}'
-2025-04-14 12:54:10.539 +03:00 [DBG] Connection id "0HNBR78VHGT03" completed keep alive response.
-2025-04-14 12:54:10.542 +03:00 [INF] Request finished HTTP/1.1 DELETE http://localhost:5249/tasks/0 - 200 null application/json; charset=utf-8 10.2165ms
-2025-04-14 12:55:17.183 +03:00 [DBG] Connection id "0HNBR78VHGT04" received FIN.
-2025-04-14 12:55:17.187 +03:00 [DBG] Connection id "0HNBR78VHGT04" sending FIN because: "The Socket transport's send loop completed gracefully."
-2025-04-14 12:55:17.188 +03:00 [DBG] Connection id "0HNBR78VHGT04" disconnecting.
-2025-04-14 12:55:17.190 +03:00 [DBG] Connection id "0HNBR78VHGT04" stopped.
-2025-04-14 12:56:20.959 +03:00 [DBG] Connection id "0HNBR78VHGT03" disconnecting.
-2025-04-14 12:56:20.960 +03:00 [DBG] Connection id "0HNBR78VHGT03" stopped.
-2025-04-14 12:56:20.961 +03:00 [DBG] Connection id "0HNBR78VHGT03" sending FIN because: "The Socket transport's send loop completed gracefully."
-2025-04-14 12:57:59.606 +03:00 [INF] Application is shutting down...
-2025-04-14 12:57:59.608 +03:00 [DBG] Hosting stopping
-2025-04-14 12:57:59.618 +03:00 [DBG] Hosting stopped
-2025-04-14 12:58:48.820 +03:00 [DBG] Hosting starting
-2025-04-14 12:58:48.873 +03:00 [DBG] Middleware configuration started with options: {AllowedHosts = *, AllowEmptyHosts = True, IncludeFailureMessage = True}
-2025-04-14 12:58:48.874 +03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
-2025-04-14 12:58:48.881 +03:00 [INF] Now listening on: http://localhost:5249
-2025-04-14 12:58:48.881 +03:00 [DBG] Loaded hosting startup assembly WebApplication3
-2025-04-14 12:58:48.881 +03:00 [INF] Application started. Press Ctrl+C to shut down.
-2025-04-14 12:58:48.881 +03:00 [INF] Hosting environment: Development
-2025-04-14 12:58:48.881 +03:00 [INF] Content root path: /Users/Danil/RiderProjects/WebApplication3/WebApplication3
-2025-04-14 12:58:48.881 +03:00 [DBG] Hosting started
+2025-04-14 13:10:56.318 +03:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-04-14 13:10:56.365 +03:00 [DBG] Hosting starting
+2025-04-14 13:10:56.379 +03:00 [DBG] Middleware configuration started with options: {AllowedHosts = *, AllowEmptyHosts = True, IncludeFailureMessage = True}
+2025-04-14 13:10:56.380 +03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-04-14 13:10:56.386 +03:00 [INF] Now listening on: http://localhost:5249
+2025-04-14 13:10:56.387 +03:00 [DBG] Loaded hosting startup assembly WebApplication3
+2025-04-14 13:10:56.387 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-14 13:10:56.387 +03:00 [INF] Hosting environment: Development
+2025-04-14 13:10:56.387 +03:00 [INF] Content root path: /Users/Danil/RiderProjects/WebApplication3/WebApplication3
+2025-04-14 13:10:56.387 +03:00 [DBG] Hosting started
+2025-04-14 13:10:57.713 +03:00 [DBG] Connection id "0HNBR7IJ717QD" accepted.
+2025-04-14 13:10:57.714 +03:00 [DBG] Connection id "0HNBR7IJ717QD" started.
+2025-04-14 13:10:57.735 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5249/api/Tasks - application/json 8
+2025-04-14 13:10:57.747 +03:00 [DBG] 1 candidate(s) found for the request path '/api/Tasks'
+2025-04-14 13:10:57.749 +03:00 [DBG] Endpoint 'WebApplication3.Controllers.TasksController.AddTask (WebApplication3)' with route pattern 'api/Tasks' is valid for the request path '/api/Tasks'
+2025-04-14 13:10:57.749 +03:00 [DBG] Request matched endpoint 'WebApplication3.Controllers.TasksController.AddTask (WebApplication3)'
+2025-04-14 13:10:57.767 +03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-04-14 13:10:57.767 +03:00 [WRN] Failed to determine the https port for redirect.
+2025-04-14 13:10:57.767 +03:00 [INF] Executing endpoint 'WebApplication3.Controllers.TasksController.AddTask (WebApplication3)'
+2025-04-14 13:10:57.776 +03:00 [INF] Route matched with {action = "AddTask", controller = "Tasks"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddTask(System.String) on controller WebApplication3.Controllers.TasksController (WebApplication3).
+2025-04-14 13:10:57.777 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-04-14 13:10:57.777 +03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-04-14 13:10:57.778 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-04-14 13:10:57.778 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-04-14 13:10:57.778 +03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-04-14 13:10:57.779 +03:00 [DBG] Executing controller factory for controller WebApplication3.Controllers.TasksController (WebApplication3)
+2025-04-14 13:10:57.779 +03:00 [DBG] Executed controller factory for controller WebApplication3.Controllers.TasksController (WebApplication3)
+2025-04-14 13:10:57.781 +03:00 [DBG] Attempting to bind parameter 'taskName' of type 'System.String' ...
+2025-04-14 13:10:57.782 +03:00 [DBG] Attempting to bind parameter 'taskName' of type 'System.String' using the name '' in request data ...
+2025-04-14 13:10:57.782 +03:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2025-04-14 13:10:57.793 +03:00 [DBG] Connection id "0HNBR7IJ717QD", Request id "0HNBR7IJ717QD:00000001": started reading request body.
+2025-04-14 13:10:57.793 +03:00 [DBG] Connection id "0HNBR7IJ717QD", Request id "0HNBR7IJ717QD:00000001": done reading request body.
+2025-04-14 13:10:57.796 +03:00 [DBG] JSON input formatter succeeded, deserializing to type 'System.String'
+2025-04-14 13:10:57.796 +03:00 [DBG] Done attempting to bind parameter 'taskName' of type 'System.String'.
+2025-04-14 13:10:57.796 +03:00 [DBG] Done attempting to bind parameter 'taskName' of type 'System.String'.
+2025-04-14 13:10:57.796 +03:00 [DBG] Attempting to validate the bound parameter 'taskName' of type 'System.String' ...
+2025-04-14 13:10:57.798 +03:00 [DBG] Done attempting to validate the bound parameter 'taskName' of type 'System.String'.
+2025-04-14 13:10:57.801 +03:00 [INF] Executing action method WebApplication3.Controllers.TasksController.AddTask (WebApplication3) - Validation state: "Valid"
+2025-04-14 13:10:57.801 +03:00 [INF] Adding task: string
+2025-04-14 13:10:57.803 +03:00 [INF] Task added: {"TaskName":"string","Timestamp":"2025-04-14T10:10:57.8016280Z"}
+2025-04-14 13:10:57.807 +03:00 [INF] Executed action method WebApplication3.Controllers.TasksController.AddTask (WebApplication3), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 4.2194ms.
+2025-04-14 13:10:57.809 +03:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-04-14 13:10:57.810 +03:00 [DBG] No information found on request to perform content negotiation.
+2025-04-14 13:10:57.810 +03:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-04-14 13:10:57.810 +03:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-04-14 13:10:57.810 +03:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-04-14 13:10:57.810 +03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`2[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-04-14 13:10:57.818 +03:00 [INF] Executed action WebApplication3.Controllers.TasksController.AddTask (WebApplication3) in 38.8388ms
+2025-04-14 13:10:57.819 +03:00 [INF] Executed endpoint 'WebApplication3.Controllers.TasksController.AddTask (WebApplication3)'
+2025-04-14 13:10:57.819 +03:00 [DBG] Connection id "0HNBR7IJ717QD" completed keep alive response.
+2025-04-14 13:10:57.819 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5249/api/Tasks - 200 null application/json; charset=utf-8 87.5633ms
+2025-04-14 13:10:59.881 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5249/api/Tasks - null null
+2025-04-14 13:10:59.882 +03:00 [DBG] 1 candidate(s) found for the request path '/api/Tasks'
+2025-04-14 13:10:59.883 +03:00 [DBG] Endpoint 'WebApplication3.Controllers.TasksController.GetTasks (WebApplication3)' with route pattern 'api/Tasks' is valid for the request path '/api/Tasks'
+2025-04-14 13:10:59.883 +03:00 [DBG] Request matched endpoint 'WebApplication3.Controllers.TasksController.GetTasks (WebApplication3)'
+2025-04-14 13:10:59.891 +03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-04-14 13:10:59.891 +03:00 [INF] Executing endpoint 'WebApplication3.Controllers.TasksController.GetTasks (WebApplication3)'
+2025-04-14 13:10:59.895 +03:00 [INF] Route matched with {action = "GetTasks", controller = "Tasks"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetTasks() on controller WebApplication3.Controllers.TasksController (WebApplication3).
+2025-04-14 13:10:59.895 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-04-14 13:10:59.895 +03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-04-14 13:10:59.896 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-04-14 13:10:59.896 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-04-14 13:10:59.896 +03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-04-14 13:10:59.897 +03:00 [DBG] Executing controller factory for controller WebApplication3.Controllers.TasksController (WebApplication3)
+2025-04-14 13:10:59.897 +03:00 [DBG] Executed controller factory for controller WebApplication3.Controllers.TasksController (WebApplication3)
+2025-04-14 13:10:59.897 +03:00 [INF] Executing action method WebApplication3.Controllers.TasksController.GetTasks (WebApplication3) - Validation state: "Valid"
+2025-04-14 13:10:59.898 +03:00 [INF] Listing tasks...
+2025-04-14 13:10:59.899 +03:00 [INF] Listing tasks: {"Tasks":["string"],"Count":1,"Timestamp":"2025-04-14T10:10:59.8990040Z"}
+2025-04-14 13:10:59.899 +03:00 [INF] Executed action method WebApplication3.Controllers.TasksController.GetTasks (WebApplication3), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1.2987ms.
+2025-04-14 13:10:59.899 +03:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-04-14 13:10:59.900 +03:00 [DBG] No information found on request to perform content negotiation.
+2025-04-14 13:10:59.900 +03:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-04-14 13:10:59.900 +03:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-04-14 13:10:59.900 +03:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-04-14 13:10:59.900 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-04-14 13:10:59.905 +03:00 [INF] Executed action WebApplication3.Controllers.TasksController.GetTasks (WebApplication3) in 8.0236ms
+2025-04-14 13:10:59.905 +03:00 [INF] Executed endpoint 'WebApplication3.Controllers.TasksController.GetTasks (WebApplication3)'
+2025-04-14 13:10:59.905 +03:00 [DBG] Connection id "0HNBR7IJ717QD" completed keep alive response.
+2025-04-14 13:10:59.905 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5249/api/Tasks - 200 null application/json; charset=utf-8 23.9205ms
+2025-04-14 13:11:01.675 +03:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:5249/api/Tasks/0 - null null
+2025-04-14 13:11:01.676 +03:00 [DBG] 1 candidate(s) found for the request path '/api/Tasks/0'
+2025-04-14 13:11:01.677 +03:00 [DBG] Endpoint 'WebApplication3.Controllers.TasksController.DeleteTask (WebApplication3)' with route pattern 'api/Tasks/{index}' is valid for the request path '/api/Tasks/0'
+2025-04-14 13:11:01.677 +03:00 [DBG] Request matched endpoint 'WebApplication3.Controllers.TasksController.DeleteTask (WebApplication3)'
+2025-04-14 13:11:01.680 +03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-04-14 13:11:01.680 +03:00 [INF] Executing endpoint 'WebApplication3.Controllers.TasksController.DeleteTask (WebApplication3)'
+2025-04-14 13:11:01.684 +03:00 [INF] Route matched with {action = "DeleteTask", controller = "Tasks"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult DeleteTask(Int32) on controller WebApplication3.Controllers.TasksController (WebApplication3).
+2025-04-14 13:11:01.684 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-04-14 13:11:01.684 +03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-04-14 13:11:01.685 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-04-14 13:11:01.685 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-04-14 13:11:01.685 +03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-04-14 13:11:01.687 +03:00 [DBG] Executing controller factory for controller WebApplication3.Controllers.TasksController (WebApplication3)
+2025-04-14 13:11:01.688 +03:00 [DBG] Executed controller factory for controller WebApplication3.Controllers.TasksController (WebApplication3)
+2025-04-14 13:11:01.688 +03:00 [DBG] Attempting to bind parameter 'index' of type 'System.Int32' ...
+2025-04-14 13:11:01.689 +03:00 [DBG] Attempting to bind parameter 'index' of type 'System.Int32' using the name 'index' in request data ...
+2025-04-14 13:11:01.689 +03:00 [DBG] Done attempting to bind parameter 'index' of type 'System.Int32'.
+2025-04-14 13:11:01.689 +03:00 [DBG] Done attempting to bind parameter 'index' of type 'System.Int32'.
+2025-04-14 13:11:01.689 +03:00 [DBG] Attempting to validate the bound parameter 'index' of type 'System.Int32' ...
+2025-04-14 13:11:01.690 +03:00 [DBG] Done attempting to validate the bound parameter 'index' of type 'System.Int32'.
+2025-04-14 13:11:01.690 +03:00 [INF] Executing action method WebApplication3.Controllers.TasksController.DeleteTask (WebApplication3) - Validation state: "Valid"
+2025-04-14 13:11:01.693 +03:00 [INF] Listing tasks: {"Tasks":["string"],"Count":1,"Timestamp":"2025-04-14T10:11:01.6922090Z"}
+2025-04-14 13:11:01.694 +03:00 [INF] Removing task at index: 0
+2025-04-14 13:11:01.695 +03:00 [INF] Task removed: {"TaskName":"string","Index":0,"Timestamp":"2025-04-14T10:11:01.6948350Z"}
+2025-04-14 13:11:01.697 +03:00 [INF] Executed action method WebApplication3.Controllers.TasksController.DeleteTask (WebApplication3), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 6.3037ms.
+2025-04-14 13:11:01.697 +03:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-04-14 13:11:01.699 +03:00 [DBG] No information found on request to perform content negotiation.
+2025-04-14 13:11:01.699 +03:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-04-14 13:11:01.699 +03:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-04-14 13:11:01.699 +03:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-04-14 13:11:01.700 +03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`2[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-04-14 13:11:01.702 +03:00 [INF] Executed action WebApplication3.Controllers.TasksController.DeleteTask (WebApplication3) in 15.1836ms
+2025-04-14 13:11:01.702 +03:00 [INF] Executed endpoint 'WebApplication3.Controllers.TasksController.DeleteTask (WebApplication3)'
+2025-04-14 13:11:01.703 +03:00 [DBG] Connection id "0HNBR7IJ717QD" completed keep alive response.
+2025-04-14 13:11:01.703 +03:00 [INF] Request finished HTTP/1.1 DELETE http://localhost:5249/api/Tasks/0 - 200 null application/json; charset=utf-8 28.4167ms
+2025-04-14 13:13:12.539 +03:00 [DBG] Connection id "0HNBR7IJ717QD" disconnecting.
+2025-04-14 13:13:12.540 +03:00 [DBG] Connection id "0HNBR7IJ717QD" stopped.
+2025-04-14 13:13:12.541 +03:00 [DBG] Connection id "0HNBR7IJ717QD" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-04-14 13:15:31.199 +03:00 [INF] Application is shutting down...
+2025-04-14 13:15:31.200 +03:00 [DBG] Hosting stopping
+2025-04-14 13:15:31.206 +03:00 [DBG] Hosting stopped

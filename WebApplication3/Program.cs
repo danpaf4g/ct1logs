@@ -1,14 +1,19 @@
 using System.Diagnostics;
 using Serilog;
+using Serilog.Formatting.Json;
 using Microsoft.OpenApi.Models;
 using WebApplication3.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
+// Настройка Serilog
 Log.Logger = new LoggerConfiguration()
     .MinimumLevel.Debug()
     .WriteTo.Console()
-    .WriteTo.File("logs/log.txt", rollingInterval: Serilog.RollingInterval.Day)
+    .WriteTo.File(
+        new JsonFormatter(),
+        path: "logs/log.json",
+        rollingInterval: Serilog.RollingInterval.Day)
     .CreateLogger();
 
 builder.Host.UseSerilog();

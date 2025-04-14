@@ -1,4 +1,18 @@
-Task added: string
-Listing tasks...
-Listing tasks...
-Task removed: string at index: 0
+[TRACE] AddTask: Started adding task 'string'.
+[TRACE] AddTask: Task 'string' added successfully.
+[TRACE] AddTask: Operation completed in 2 ms.
+[TRACE] ListTasks: Started listing tasks.
+[TRACE] ListTasks: Listed 1 tasks successfully.
+[TRACE] ListTasks: Operation completed in 1 ms.
+[TRACE] ListTasks: Started listing tasks.
+[TRACE] ListTasks: Listed 1 tasks successfully.
+[TRACE] ListTasks: Operation completed in 1 ms.
+[TRACE] RemoveTask: Started removing task at index 0.
+[TRACE] RemoveTask: Task 'string' at index 0 removed successfully.
+[TRACE] RemoveTask: Operation completed in 1 ms.
+[TRACE] ListTasks: Started listing tasks.
+[TRACE] ListTasks: No tasks available.
+[TRACE] ListTasks: Operation completed in 1 ms.
+[TRACE] ListTasks: Started listing tasks.
+[TRACE] ListTasks: No tasks available.
+[TRACE] ListTasks: Operation completed in 0 ms.
