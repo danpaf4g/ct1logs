@@ -1,27 +1,241 @@
-2025-04-14 12:35:28.693 +03:00 [DBG] Hosting starting
-2025-04-14 12:35:28.731 +03:00 [DBG] Middleware configuration started with options: {AllowedHosts = *, AllowEmptyHosts = True, IncludeFailureMessage = True}
-2025-04-14 12:35:28.733 +03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
-2025-04-14 12:35:28.739 +03:00 [INF] Now listening on: http://localhost:5249
-2025-04-14 12:35:28.739 +03:00 [DBG] Loaded hosting startup assembly WebApplication3
-2025-04-14 12:35:28.739 +03:00 [INF] Application started. Press Ctrl+C to shut down.
-2025-04-14 12:35:28.740 +03:00 [INF] Hosting environment: Development
-2025-04-14 12:35:28.740 +03:00 [INF] Content root path: /Users/Danil/RiderProjects/WebApplication3/WebApplication3
-2025-04-14 12:35:28.740 +03:00 [DBG] Hosting started
-2025-04-14 12:35:42.662 +03:00 [DBG] Connection id "0HNBR6USSARUT" accepted.
-2025-04-14 12:35:42.662 +03:00 [DBG] Connection id "0HNBR6USSARUT" started.
-2025-04-14 12:35:42.663 +03:00 [DBG] Connection id "0HNBR6USSARUU" accepted.
-2025-04-14 12:35:42.663 +03:00 [DBG] Connection id "0HNBR6USSARUU" started.
-2025-04-14 12:35:42.681 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5249/ - null null
-2025-04-14 12:35:42.717 +03:00 [DBG] 1 candidate(s) found for the request path '/'
-2025-04-14 12:35:42.718 +03:00 [DBG] Request matched endpoint 'HTTP: GET /'
-2025-04-14 12:35:42.719 +03:00 [WRN] Failed to determine the https port for redirect.
-2025-04-14 12:35:42.721 +03:00 [INF] Executing endpoint 'HTTP: GET /'
-2025-04-14 12:35:42.722 +03:00 [INF] test
-2025-04-14 12:35:42.722 +03:00 [INF] test(Serilog).
-2025-04-14 12:35:42.725 +03:00 [INF] Executed endpoint 'HTTP: GET /'
-2025-04-14 12:35:42.725 +03:00 [DBG] Connection id "0HNBR6USSARUT" completed keep alive response.
-2025-04-14 12:35:42.726 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5249/ - 200 null text/plain; charset=utf-8 46.9802ms
-2025-04-14 12:36:43.960 +03:00 [DBG] Connection id "0HNBR6USSARUU" received FIN.
-2025-04-14 12:36:43.964 +03:00 [DBG] Connection id "0HNBR6USSARUU" sending FIN because: "The Socket transport's send loop completed gracefully."
-2025-04-14 12:36:43.969 +03:00 [DBG] Connection id "0HNBR6USSARUU" disconnecting.
-2025-04-14 12:36:43.971 +03:00 [DBG] Connection id "0HNBR6USSARUU" stopped.
+2025-04-14 12:51:32.798 +03:00 [DBG] Hosting starting
+2025-04-14 12:51:32.834 +03:00 [DBG] Middleware configuration started with options: {AllowedHosts = *, AllowEmptyHosts = True, IncludeFailureMessage = True}
+2025-04-14 12:51:32.836 +03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-04-14 12:51:32.842 +03:00 [INF] Now listening on: http://localhost:5249
+2025-04-14 12:51:32.842 +03:00 [DBG] Loaded hosting startup assembly WebApplication3
+2025-04-14 12:51:32.842 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-14 12:51:32.842 +03:00 [INF] Hosting environment: Development
+2025-04-14 12:51:32.843 +03:00 [INF] Content root path: /Users/Danil/RiderProjects/WebApplication3/WebApplication3
+2025-04-14 12:51:32.843 +03:00 [DBG] Hosting started
+2025-04-14 12:51:56.558 +03:00 [DBG] Connection id "0HNBR77V448ML" accepted.
+2025-04-14 12:51:56.559 +03:00 [DBG] Connection id "0HNBR77V448ML" started.
+2025-04-14 12:51:56.559 +03:00 [DBG] Connection id "0HNBR77V448MM" accepted.
+2025-04-14 12:51:56.559 +03:00 [DBG] Connection id "0HNBR77V448MM" started.
+2025-04-14 12:51:56.585 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5249/tasks - null null
+2025-04-14 12:51:56.640 +03:00 [DBG] 1 candidate(s) found for the request path '/tasks'
+2025-04-14 12:51:56.641 +03:00 [DBG] Request matched endpoint 'HTTP: GET /tasks'
+2025-04-14 12:51:56.641 +03:00 [WRN] Failed to determine the https port for redirect.
+2025-04-14 12:51:56.643 +03:00 [INF] Executing endpoint 'HTTP: GET /tasks'
+2025-04-14 12:51:56.644 +03:00 [INF] No tasks available.
+2025-04-14 12:51:56.648 +03:00 [INF] Executed endpoint 'HTTP: GET /tasks'
+2025-04-14 12:51:56.648 +03:00 [DBG] Connection id "0HNBR77V448ML" completed keep alive response.
+2025-04-14 12:51:56.649 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5249/tasks - 200 null application/json; charset=utf-8 66.9035ms
+2025-04-14 12:51:59.383 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5249/tasks/asd - null null
+2025-04-14 12:51:59.384 +03:00 [DBG] 1 candidate(s) found for the request path '/tasks/asd'
+2025-04-14 12:51:59.384 +03:00 [DBG] Request matched endpoint '405 HTTP Method Not Supported'
+2025-04-14 12:51:59.385 +03:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2025-04-14 12:51:59.385 +03:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2025-04-14 12:51:59.385 +03:00 [DBG] Connection id "0HNBR77V448ML" completed keep alive response.
+2025-04-14 12:51:59.385 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5249/tasks/asd - 405 0 null 2.1273ms
+2025-04-14 12:52:05.033 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5249/tasks - null null
+2025-04-14 12:52:05.034 +03:00 [DBG] 1 candidate(s) found for the request path '/tasks'
+2025-04-14 12:52:05.034 +03:00 [DBG] Request matched endpoint 'HTTP: GET /tasks'
+2025-04-14 12:52:05.034 +03:00 [INF] Executing endpoint 'HTTP: GET /tasks'
+2025-04-14 12:52:05.035 +03:00 [INF] No tasks available.
+2025-04-14 12:52:05.035 +03:00 [INF] Executed endpoint 'HTTP: GET /tasks'
+2025-04-14 12:52:05.035 +03:00 [DBG] Connection id "0HNBR77V448ML" completed keep alive response.
+2025-04-14 12:52:05.036 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5249/tasks - 200 null application/json; charset=utf-8 3.5763ms
+2025-04-14 12:52:19.320 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5249/swagger - null null
+2025-04-14 12:52:19.322 +03:00 [DBG] No candidates found for the request path '/swagger'
+2025-04-14 12:52:19.322 +03:00 [DBG] Request did not match any endpoints
+2025-04-14 12:52:19.324 +03:00 [DBG] Connection id "0HNBR77V448ML" completed keep alive response.
+2025-04-14 12:52:19.326 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5249/swagger - 404 0 null 5.8263ms
+2025-04-14 12:52:19.327 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5249/swagger, Response status code: 404
+2025-04-14 12:53:15.345 +03:00 [INF] Application is shutting down...
+2025-04-14 12:53:15.346 +03:00 [DBG] Hosting stopping
+2025-04-14 12:53:15.355 +03:00 [DBG] Connection id "0HNBR77V448MM" disconnecting.
+2025-04-14 12:53:15.355 +03:00 [DBG] Connection id "0HNBR77V448ML" disconnecting.
+2025-04-14 12:53:15.357 +03:00 [DBG] Connection id "0HNBR77V448ML" stopped.
+2025-04-14 12:53:15.357 +03:00 [DBG] Connection id "0HNBR77V448MM" stopped.
+2025-04-14 12:53:15.360 +03:00 [DBG] Connection id "0HNBR77V448ML" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-04-14 12:53:15.360 +03:00 [DBG] Connection id "0HNBR77V448MM" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-04-14 12:53:15.364 +03:00 [DBG] Hosting stopped
+2025-04-14 12:53:17.799 +03:00 [DBG] Hosting starting
+2025-04-14 12:53:17.850 +03:00 [DBG] Middleware configuration started with options: {AllowedHosts = *, AllowEmptyHosts = True, IncludeFailureMessage = True}
+2025-04-14 12:53:17.852 +03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-04-14 12:53:17.857 +03:00 [INF] Now listening on: http://localhost:5249
+2025-04-14 12:53:17.857 +03:00 [DBG] Loaded hosting startup assembly WebApplication3
+2025-04-14 12:53:17.857 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-14 12:53:17.858 +03:00 [INF] Hosting environment: Development
+2025-04-14 12:53:17.858 +03:00 [INF] Content root path: /Users/Danil/RiderProjects/WebApplication3/WebApplication3
+2025-04-14 12:53:17.858 +03:00 [DBG] Hosting started
+2025-04-14 12:53:22.926 +03:00 [DBG] Connection id "0HNBR78ORPQR3" accepted.
+2025-04-14 12:53:22.927 +03:00 [DBG] Connection id "0HNBR78ORPQR4" accepted.
+2025-04-14 12:53:22.927 +03:00 [DBG] Connection id "0HNBR78ORPQR3" started.
+2025-04-14 12:53:22.927 +03:00 [DBG] Connection id "0HNBR78ORPQR4" started.
+2025-04-14 12:53:22.947 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5249/ - null null
+2025-04-14 12:53:23.011 +03:00 [DBG] 1 candidate(s) found for the request path '/'
+2025-04-14 12:53:23.012 +03:00 [DBG] Request matched endpoint 'HTTP: GET /'
+2025-04-14 12:53:23.025 +03:00 [DBG] Connection id "0HNBR78ORPQR3" completed keep alive response.
+2025-04-14 12:53:23.026 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5249/ - 301 0 null 81.7341ms
+2025-04-14 12:53:23.028 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5249/index.html - null null
+2025-04-14 12:53:23.028 +03:00 [DBG] No candidates found for the request path '/index.html'
+2025-04-14 12:53:23.028 +03:00 [DBG] Request did not match any endpoints
+2025-04-14 12:53:23.065 +03:00 [DBG] Connection id "0HNBR78ORPQR3" completed keep alive response.
+2025-04-14 12:53:23.065 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5249/index.html - 200 null text/html;charset=utf-8 37.3944ms
+2025-04-14 12:53:23.086 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5249/swagger-ui.css - null null
+2025-04-14 12:53:23.088 +03:00 [DBG] No candidates found for the request path '/swagger-ui.css'
+2025-04-14 12:53:23.088 +03:00 [DBG] Request did not match any endpoints
+2025-04-14 12:53:23.090 +03:00 [DBG] Connection id "0HNBR78ORPQR5" accepted.
+2025-04-14 12:53:23.090 +03:00 [DBG] Connection id "0HNBR78ORPQR6" accepted.
+2025-04-14 12:53:23.090 +03:00 [DBG] Connection id "0HNBR78ORPQR7" accepted.
+2025-04-14 12:53:23.090 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5249/index.css - null null
+2025-04-14 12:53:23.091 +03:00 [DBG] No candidates found for the request path '/index.css'
+2025-04-14 12:53:23.091 +03:00 [DBG] Request did not match any endpoints
+2025-04-14 12:53:23.091 +03:00 [DBG] Connection id "0HNBR78ORPQR5" started.
+2025-04-14 12:53:23.091 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5249/swagger-ui-bundle.js - null null
+2025-04-14 12:53:23.091 +03:00 [DBG] No candidates found for the request path '/swagger-ui-bundle.js'
+2025-04-14 12:53:23.092 +03:00 [DBG] Request did not match any endpoints
+2025-04-14 12:53:23.093 +03:00 [DBG] Connection id "0HNBR78ORPQR6" started.
+2025-04-14 12:53:23.093 +03:00 [DBG] Connection id "0HNBR78ORPQR7" started.
+2025-04-14 12:53:23.093 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5249/index.js - null null
+2025-04-14 12:53:23.093 +03:00 [DBG] No candidates found for the request path '/index.js'
+2025-04-14 12:53:23.093 +03:00 [DBG] Request did not match any endpoints
+2025-04-14 12:53:23.093 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5249/swagger-ui-standalone-preset.js - null null
+2025-04-14 12:53:23.094 +03:00 [DBG] No candidates found for the request path '/swagger-ui-standalone-preset.js'
+2025-04-14 12:53:23.095 +03:00 [DBG] Request did not match any endpoints
+2025-04-14 12:53:23.095 +03:00 [INF] Sending file. Request path: '/index.css'. Physical path: 'N/A'
+2025-04-14 12:53:23.095 +03:00 [DBG] Connection id "0HNBR78ORPQR4" completed keep alive response.
+2025-04-14 12:53:23.095 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5249/index.css - 200 202 text/css 4.9333ms
+2025-04-14 12:53:23.100 +03:00 [DBG] Connection id "0HNBR78ORPQR7" completed keep alive response.
+2025-04-14 12:53:23.101 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5249/index.js - 200 null application/javascript;charset=utf-8 7.8227ms
+2025-04-14 12:53:23.102 +03:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-04-14 12:53:23.103 +03:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-04-14 12:53:23.109 +03:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-04-14 12:53:23.110 +03:00 [DBG] Connection id "0HNBR78ORPQR5" completed keep alive response.
+2025-04-14 12:53:23.110 +03:00 [DBG] Connection id "0HNBR78ORPQR3" completed keep alive response.
+2025-04-14 12:53:23.111 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5249/swagger-ui-bundle.js - 200 1466908 text/javascript 19.1784ms
+2025-04-14 12:53:23.111 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5249/swagger-ui.css - 200 154949 text/css 24.753ms
+2025-04-14 12:53:23.111 +03:00 [DBG] Connection id "0HNBR78ORPQR6" completed keep alive response.
+2025-04-14 12:53:23.111 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5249/swagger-ui-standalone-preset.js - 200 229223 text/javascript 18.5244ms
+2025-04-14 12:53:23.190 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5249/swagger/v1/swagger.json - null null
+2025-04-14 12:53:23.191 +03:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2025-04-14 12:53:23.191 +03:00 [DBG] Request did not match any endpoints
+2025-04-14 12:53:23.196 +03:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-04-14 12:53:23.200 +03:00 [DBG] Executing API description provider 'EndpointMetadataApiDescriptionProvider' from assembly Microsoft.AspNetCore.Mvc.ApiExplorer v9.0.0.0.
+2025-04-14 12:53:23.203 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5249/favicon-32x32.png - null null
+2025-04-14 12:53:23.204 +03:00 [DBG] No candidates found for the request path '/favicon-32x32.png'
+2025-04-14 12:53:23.204 +03:00 [DBG] Request did not match any endpoints
+2025-04-14 12:53:23.204 +03:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2025-04-14 12:53:23.204 +03:00 [DBG] Connection id "0HNBR78ORPQR6" completed keep alive response.
+2025-04-14 12:53:23.204 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5249/favicon-32x32.png - 200 628 image/png 0.9411ms
+2025-04-14 12:53:23.267 +03:00 [DBG] Connection id "0HNBR78ORPQR5" completed keep alive response.
+2025-04-14 12:53:23.268 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5249/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 77.1133ms
+2025-04-14 12:53:43.012 +03:00 [INF] Application is shutting down...
+2025-04-14 12:53:43.014 +03:00 [DBG] Hosting stopping
+2025-04-14 12:53:43.027 +03:00 [DBG] Connection id "0HNBR78ORPQR7" disconnecting.
+2025-04-14 12:53:43.027 +03:00 [DBG] Connection id "0HNBR78ORPQR4" disconnecting.
+2025-04-14 12:53:43.027 +03:00 [DBG] Connection id "0HNBR78ORPQR5" disconnecting.
+2025-04-14 12:53:43.027 +03:00 [DBG] Connection id "0HNBR78ORPQR6" disconnecting.
+2025-04-14 12:53:43.027 +03:00 [DBG] Connection id "0HNBR78ORPQR3" disconnecting.
+2025-04-14 12:53:43.028 +03:00 [DBG] Connection id "0HNBR78ORPQR7" stopped.
+2025-04-14 12:53:43.028 +03:00 [DBG] Connection id "0HNBR78ORPQR5" stopped.
+2025-04-14 12:53:43.028 +03:00 [DBG] Connection id "0HNBR78ORPQR3" stopped.
+2025-04-14 12:53:43.028 +03:00 [DBG] Connection id "0HNBR78ORPQR4" stopped.
+2025-04-14 12:53:43.028 +03:00 [DBG] Connection id "0HNBR78ORPQR6" stopped.
+2025-04-14 12:53:43.029 +03:00 [DBG] Connection id "0HNBR78ORPQR4" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-04-14 12:53:43.029 +03:00 [DBG] Connection id "0HNBR78ORPQR5" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-04-14 12:53:43.029 +03:00 [DBG] Connection id "0HNBR78ORPQR7" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-04-14 12:53:43.029 +03:00 [DBG] Connection id "0HNBR78ORPQR3" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-04-14 12:53:43.029 +03:00 [DBG] Connection id "0HNBR78ORPQR6" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-04-14 12:53:43.033 +03:00 [DBG] Hosting stopped
+2025-04-14 12:53:44.688 +03:00 [DBG] Hosting starting
+2025-04-14 12:53:44.758 +03:00 [DBG] Middleware configuration started with options: {AllowedHosts = *, AllowEmptyHosts = True, IncludeFailureMessage = True}
+2025-04-14 12:53:44.760 +03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-04-14 12:53:44.767 +03:00 [INF] Now listening on: http://localhost:5249
+2025-04-14 12:53:44.767 +03:00 [DBG] Loaded hosting startup assembly WebApplication3
+2025-04-14 12:53:44.767 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-14 12:53:44.767 +03:00 [INF] Hosting environment: Development
+2025-04-14 12:53:44.767 +03:00 [INF] Content root path: /Users/Danil/RiderProjects/WebApplication3/WebApplication3
+2025-04-14 12:53:44.767 +03:00 [DBG] Hosting started
+2025-04-14 12:53:45.336 +03:00 [DBG] Connection id "0HNBR78VHGT03" accepted.
+2025-04-14 12:53:45.337 +03:00 [DBG] Connection id "0HNBR78VHGT03" started.
+2025-04-14 12:53:45.338 +03:00 [DBG] Connection id "0HNBR78VHGT04" accepted.
+2025-04-14 12:53:45.338 +03:00 [DBG] Connection id "0HNBR78VHGT04" started.
+2025-04-14 12:53:45.396 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5249/swagger/v1/swagger.json - null null
+2025-04-14 12:53:45.443 +03:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2025-04-14 12:53:45.443 +03:00 [DBG] Request did not match any endpoints
+2025-04-14 12:53:45.456 +03:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-04-14 12:53:45.457 +03:00 [DBG] Executing API description provider 'EndpointMetadataApiDescriptionProvider' from assembly Microsoft.AspNetCore.Mvc.ApiExplorer v9.0.0.0.
+2025-04-14 12:53:45.510 +03:00 [DBG] Connection id "0HNBR78VHGT03" completed keep alive response.
+2025-04-14 12:53:45.511 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5249/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 117.2355ms
+2025-04-14 12:53:48.249 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5249/test - null null
+2025-04-14 12:53:48.254 +03:00 [DBG] 1 candidate(s) found for the request path '/test'
+2025-04-14 12:53:48.256 +03:00 [DBG] Request matched endpoint 'HTTP: GET /test'
+2025-04-14 12:53:48.265 +03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-04-14 12:53:48.266 +03:00 [WRN] Failed to determine the https port for redirect.
+2025-04-14 12:53:48.268 +03:00 [INF] Executing endpoint 'HTTP: GET /test'
+2025-04-14 12:53:48.269 +03:00 [INF] test
+2025-04-14 12:53:48.269 +03:00 [INF] test(Serilog).
+2025-04-14 12:53:48.271 +03:00 [INF] Executed endpoint 'HTTP: GET /test'
+2025-04-14 12:53:48.271 +03:00 [DBG] Connection id "0HNBR78VHGT03" completed keep alive response.
+2025-04-14 12:53:48.271 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5249/test - 200 null text/plain; charset=utf-8 22.912ms
+2025-04-14 12:53:52.663 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5249/tasks - null null
+2025-04-14 12:53:52.663 +03:00 [DBG] 1 candidate(s) found for the request path '/tasks'
+2025-04-14 12:53:52.664 +03:00 [DBG] Request matched endpoint 'HTTP: GET /tasks'
+2025-04-14 12:53:52.665 +03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-04-14 12:53:52.665 +03:00 [INF] Executing endpoint 'HTTP: GET /tasks'
+2025-04-14 12:53:52.665 +03:00 [INF] No tasks available.
+2025-04-14 12:53:52.667 +03:00 [INF] Executed endpoint 'HTTP: GET /tasks'
+2025-04-14 12:53:52.667 +03:00 [DBG] Connection id "0HNBR78VHGT03" completed keep alive response.
+2025-04-14 12:53:52.667 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5249/tasks - 200 null application/json; charset=utf-8 4.2955ms
+2025-04-14 12:53:54.947 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5249/tasks - null null
+2025-04-14 12:53:54.948 +03:00 [DBG] 1 candidate(s) found for the request path '/tasks'
+2025-04-14 12:53:54.948 +03:00 [DBG] Request matched endpoint 'HTTP: GET /tasks'
+2025-04-14 12:53:54.948 +03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-04-14 12:53:54.948 +03:00 [INF] Executing endpoint 'HTTP: GET /tasks'
+2025-04-14 12:53:54.948 +03:00 [INF] No tasks available.
+2025-04-14 12:53:54.951 +03:00 [INF] Executed endpoint 'HTTP: GET /tasks'
+2025-04-14 12:53:54.953 +03:00 [DBG] Connection id "0HNBR78VHGT03" completed keep alive response.
+2025-04-14 12:53:54.953 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5249/tasks - 200 null application/json; charset=utf-8 6.1922ms
+2025-04-14 12:53:59.772 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5249/tasks?taskName=test - null 0
+2025-04-14 12:53:59.772 +03:00 [DBG] 1 candidate(s) found for the request path '/tasks'
+2025-04-14 12:53:59.772 +03:00 [DBG] Request matched endpoint 'HTTP: POST /tasks'
+2025-04-14 12:53:59.772 +03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-04-14 12:53:59.772 +03:00 [INF] Executing endpoint 'HTTP: POST /tasks'
+2025-04-14 12:53:59.778 +03:00 [INF] Task added: test
+2025-04-14 12:53:59.780 +03:00 [INF] Setting HTTP status code 200.
+2025-04-14 12:53:59.786 +03:00 [INF] Writing value of type '<>f__AnonymousType0`1' as Json.
+2025-04-14 12:53:59.786 +03:00 [INF] Executed endpoint 'HTTP: POST /tasks'
+2025-04-14 12:53:59.786 +03:00 [DBG] Connection id "0HNBR78VHGT03" completed keep alive response.
+2025-04-14 12:53:59.786 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5249/tasks?taskName=test - 200 null application/json; charset=utf-8 14.8362ms
+2025-04-14 12:54:06.443 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5249/tasks - null null
+2025-04-14 12:54:06.443 +03:00 [DBG] 1 candidate(s) found for the request path '/tasks'
+2025-04-14 12:54:06.443 +03:00 [DBG] Request matched endpoint 'HTTP: GET /tasks'
+2025-04-14 12:54:06.443 +03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-04-14 12:54:06.443 +03:00 [INF] Executing endpoint 'HTTP: GET /tasks'
+2025-04-14 12:54:06.443 +03:00 [INF] Listing tasks...
+2025-04-14 12:54:06.443 +03:00 [INF] Executed endpoint 'HTTP: GET /tasks'
+2025-04-14 12:54:06.443 +03:00 [DBG] Connection id "0HNBR78VHGT03" completed keep alive response.
+2025-04-14 12:54:06.443 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5249/tasks - 200 null application/json; charset=utf-8 0.7936ms
+2025-04-14 12:54:10.532 +03:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:5249/tasks/0 - null null
+2025-04-14 12:54:10.533 +03:00 [DBG] 1 candidate(s) found for the request path '/tasks/0'
+2025-04-14 12:54:10.535 +03:00 [DBG] Endpoint 'HTTP: DELETE /tasks/{index}' with route pattern '/tasks/{index}' is valid for the request path '/tasks/0'
+2025-04-14 12:54:10.536 +03:00 [DBG] Request matched endpoint 'HTTP: DELETE /tasks/{index}'
+2025-04-14 12:54:10.536 +03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-04-14 12:54:10.536 +03:00 [INF] Executing endpoint 'HTTP: DELETE /tasks/{index}'
+2025-04-14 12:54:10.537 +03:00 [INF] Task removed: test
+2025-04-14 12:54:10.538 +03:00 [INF] Setting HTTP status code 200.
+2025-04-14 12:54:10.538 +03:00 [INF] Writing value of type '<>f__AnonymousType0`1' as Json.
+2025-04-14 12:54:10.538 +03:00 [INF] Executed endpoint 'HTTP: DELETE /tasks/{index}'
+2025-04-14 12:54:10.539 +03:00 [DBG] Connection id "0HNBR78VHGT03" completed keep alive response.
+2025-04-14 12:54:10.542 +03:00 [INF] Request finished HTTP/1.1 DELETE http://localhost:5249/tasks/0 - 200 null application/json; charset=utf-8 10.2165ms
+2025-04-14 12:55:17.183 +03:00 [DBG] Connection id "0HNBR78VHGT04" received FIN.
+2025-04-14 12:55:17.187 +03:00 [DBG] Connection id "0HNBR78VHGT04" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-04-14 12:55:17.188 +03:00 [DBG] Connection id "0HNBR78VHGT04" disconnecting.
+2025-04-14 12:55:17.190 +03:00 [DBG] Connection id "0HNBR78VHGT04" stopped.
+2025-04-14 12:56:20.959 +03:00 [DBG] Connection id "0HNBR78VHGT03" disconnecting.
+2025-04-14 12:56:20.960 +03:00 [DBG] Connection id "0HNBR78VHGT03" stopped.
+2025-04-14 12:56:20.961 +03:00 [DBG] Connection id "0HNBR78VHGT03" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-04-14 12:57:59.606 +03:00 [INF] Application is shutting down...
+2025-04-14 12:57:59.608 +03:00 [DBG] Hosting stopping
+2025-04-14 12:57:59.618 +03:00 [DBG] Hosting stopped
+2025-04-14 12:58:48.820 +03:00 [DBG] Hosting starting
+2025-04-14 12:58:48.873 +03:00 [DBG] Middleware configuration started with options: {AllowedHosts = *, AllowEmptyHosts = True, IncludeFailureMessage = True}
+2025-04-14 12:58:48.874 +03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-04-14 12:58:48.881 +03:00 [INF] Now listening on: http://localhost:5249
+2025-04-14 12:58:48.881 +03:00 [DBG] Loaded hosting startup assembly WebApplication3
+2025-04-14 12:58:48.881 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-14 12:58:48.881 +03:00 [INF] Hosting environment: Development
+2025-04-14 12:58:48.881 +03:00 [INF] Content root path: /Users/Danil/RiderProjects/WebApplication3/WebApplication3
+2025-04-14 12:58:48.881 +03:00 [DBG] Hosting started
