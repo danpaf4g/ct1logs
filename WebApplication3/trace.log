@@ -1,18 +1,19 @@
-[TRACE] AddTask: Started adding task 'string'.
-[TRACE] AddTask: Task 'string' added successfully.
-[TRACE] AddTask: Operation completed in 2 ms.
-[TRACE] ListTasks: Started listing tasks.
-[TRACE] ListTasks: Listed 1 tasks successfully.
-[TRACE] ListTasks: Operation completed in 1 ms.
-[TRACE] ListTasks: Started listing tasks.
-[TRACE] ListTasks: Listed 1 tasks successfully.
-[TRACE] ListTasks: Operation completed in 1 ms.
-[TRACE] RemoveTask: Started removing task at index 0.
-[TRACE] RemoveTask: Task 'string' at index 0 removed successfully.
-[TRACE] RemoveTask: Operation completed in 1 ms.
-[TRACE] ListTasks: Started listing tasks.
-[TRACE] ListTasks: No tasks available.
-[TRACE] ListTasks: Operation completed in 1 ms.
-[TRACE] ListTasks: Started listing tasks.
-[TRACE] ListTasks: No tasks available.
-[TRACE] ListTasks: Operation completed in 0 ms.
+[TRACE] RemoveTask: Started removing task at index -1.
+[TRACE] RemoveTask: Error - Invalid task index -1.
+[TRACE] Unhandled exception: Invalid task index: -1 (Parameter 'index')
+[TRACE] StackTrace:    at WebApplication3.Services.TaskManager.RemoveTask(Int32 index) in /Users/Danil/RiderProjects/WebApplication3/WebApplication3/Services/TaskManager.cs:line 41
+   at WebApplication3.Controllers.TasksController.DeleteTask(Int32 index) in /Users/Danil/RiderProjects/WebApplication3/WebApplication3/Controllers/TasksController.cs:line 37
+   at lambda_method2(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at WebApplication3.Middlewares.ValidationMiddleware.InvokeAsync(HttpContext context) in /Users/Danil/RiderProjects/WebApplication3/WebApplication3/Middlewares/ValidationMiddleware.cs:line 21
+   at WebApplication3.Middlewares.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in /Users/Danil/RiderProjects/WebApplication3/WebApplication3/Middlewares/ExceptionHandlingMiddleware.cs:line 27

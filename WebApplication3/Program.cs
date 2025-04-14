@@ -2,6 +2,7 @@ using System.Diagnostics;
 using Serilog;
 using Serilog.Formatting.Json;
 using Microsoft.OpenApi.Models;
+using WebApplication3.Middlewares;
 using WebApplication3.Services;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -48,6 +49,9 @@ if (app.Environment.IsDevelopment())
         options.RoutePrefix = string.Empty;
     });
 }
+
+app.UseMiddleware<ExceptionHandlingMiddleware>();
+app.UseMiddleware<ValidationMiddleware>();
 
 app.UseHttpsRedirection();
 
