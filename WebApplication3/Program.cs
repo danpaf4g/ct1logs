@@ -1,7 +1,7 @@
 using System.Diagnostics;
 using Serilog;
-using WebApplication3.Services;
 using Microsoft.OpenApi.Models;
+using WebApplication3.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -17,6 +17,7 @@ Trace.Listeners.Add(new TextWriterTraceListener(File.CreateText("trace.log")));
 Trace.AutoFlush = true;
 
 builder.Services.AddSingleton<TaskManager>();
+builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(options =>
 {
@@ -45,36 +46,6 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-app.MapGet("/test", (ILogger<Program> logger) =>
-{
-    logger.LogInformation("test");
-    Log.Information("test(Serilog).");
-    Trace.WriteLine("test(Trace).");
-    return "test";
-});
-
-app.MapGet("/tasks", (TaskManager taskManager) =>
-{
-    var result = taskManager.ListTasks();
-    return result;
-})
-.WithName("GetTasks")
-.WithOpenApi();
-
-app.MapPost("/tasks", (TaskManager taskManager, string taskName) =>
-{
-    taskManager.AddTask(taskName);
-    return Results.Ok(new { message = "Task added successfully." });
-})
-.WithName("AddTask")
-.WithOpenApi();
-
-app.MapDelete("/tasks/{index}", (TaskManager taskManager, int index) =>
-{
-    taskManager.RemoveTask(index);
-    return Results.Ok(new { message = "Task removed successfully." });
-})
-.WithName("RemoveTask")
-.WithOpenApi();
+app.MapControllers();
 
 app.Run();
