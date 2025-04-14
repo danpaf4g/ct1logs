@@ -1,0 +1,27 @@
+2025-04-14 12:35:28.693 +03:00 [DBG] Hosting starting
+2025-04-14 12:35:28.731 +03:00 [DBG] Middleware configuration started with options: {AllowedHosts = *, AllowEmptyHosts = True, IncludeFailureMessage = True}
+2025-04-14 12:35:28.733 +03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-04-14 12:35:28.739 +03:00 [INF] Now listening on: http://localhost:5249
+2025-04-14 12:35:28.739 +03:00 [DBG] Loaded hosting startup assembly WebApplication3
+2025-04-14 12:35:28.739 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-14 12:35:28.740 +03:00 [INF] Hosting environment: Development
+2025-04-14 12:35:28.740 +03:00 [INF] Content root path: /Users/Danil/RiderProjects/WebApplication3/WebApplication3
+2025-04-14 12:35:28.740 +03:00 [DBG] Hosting started
+2025-04-14 12:35:42.662 +03:00 [DBG] Connection id "0HNBR6USSARUT" accepted.
+2025-04-14 12:35:42.662 +03:00 [DBG] Connection id "0HNBR6USSARUT" started.
+2025-04-14 12:35:42.663 +03:00 [DBG] Connection id "0HNBR6USSARUU" accepted.
+2025-04-14 12:35:42.663 +03:00 [DBG] Connection id "0HNBR6USSARUU" started.
+2025-04-14 12:35:42.681 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5249/ - null null
+2025-04-14 12:35:42.717 +03:00 [DBG] 1 candidate(s) found for the request path '/'
+2025-04-14 12:35:42.718 +03:00 [DBG] Request matched endpoint 'HTTP: GET /'
+2025-04-14 12:35:42.719 +03:00 [WRN] Failed to determine the https port for redirect.
+2025-04-14 12:35:42.721 +03:00 [INF] Executing endpoint 'HTTP: GET /'
+2025-04-14 12:35:42.722 +03:00 [INF] test
+2025-04-14 12:35:42.722 +03:00 [INF] test(Serilog).
+2025-04-14 12:35:42.725 +03:00 [INF] Executed endpoint 'HTTP: GET /'
+2025-04-14 12:35:42.725 +03:00 [DBG] Connection id "0HNBR6USSARUT" completed keep alive response.
+2025-04-14 12:35:42.726 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5249/ - 200 null text/plain; charset=utf-8 46.9802ms
+2025-04-14 12:36:43.960 +03:00 [DBG] Connection id "0HNBR6USSARUU" received FIN.
+2025-04-14 12:36:43.964 +03:00 [DBG] Connection id "0HNBR6USSARUU" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-04-14 12:36:43.969 +03:00 [DBG] Connection id "0HNBR6USSARUU" disconnecting.
+2025-04-14 12:36:43.971 +03:00 [DBG] Connection id "0HNBR6USSARUU" stopped.
