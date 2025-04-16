@@ -7,17 +7,14 @@ using WebApplication3.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Настройка Serilog
 Log.Logger = new LoggerConfiguration()
     .MinimumLevel.Debug()
     .WriteTo.Console()
-    .WriteTo.File(
-        new JsonFormatter(),
-        path: "logs/log.json",
-        rollingInterval: Serilog.RollingInterval.Day)
+    .WriteTo.File("logs/log.txt", rollingInterval: RollingInterval.Day)
     .CreateLogger();
 
 builder.Host.UseSerilog();
+
 
 Trace.Listeners.Add(new TextWriterTraceListener(File.CreateText("trace.log")));
 Trace.AutoFlush = true;
@@ -52,6 +49,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseMiddleware<ExceptionHandlingMiddleware>();
 app.UseMiddleware<ValidationMiddleware>();
+app.UseMiddleware<TracingMiddleware>();
 
 app.UseHttpsRedirection();
 

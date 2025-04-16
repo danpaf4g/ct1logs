@@ -1,78 +1,116 @@
 using Microsoft.Extensions.Logging;
 using System.Diagnostics;
+using System.Collections.Generic;
+using WebApplication3.Models;
+using WebApplication3.Models.Request;
 
 namespace WebApplication3.Services;
 
 public class TaskManager
 {
     private readonly ILogger<TaskManager> _logger;
-    private readonly List<string> _tasks = new();
+    private readonly List<TaskModel> _tasks = new();
 
     public TaskManager(ILogger<TaskManager> logger)
     {
         _logger = logger;
     }
 
-    public void AddTask(string taskName)
+    public TaskModel AddTask(AddTaskRequest request)
     {
         var stopwatch = Stopwatch.StartNew();
-        Trace.WriteLine($"[TRACE] AddTask: Started adding task '{taskName}'.");
+        Trace.WriteLine($"[TRACE] AddTask: Started adding task '{request.Title}'.");
 
-        var taskInfo = new { TaskName = taskName, Timestamp = DateTime.UtcNow };
-        _tasks.Add(taskName);
-
-        _logger.LogInformation("Task added: {@TaskInfo}", taskInfo);
-        Trace.WriteLine($"[TRACE] AddTask: Task '{taskName}' added successfully.");
-
-        stopwatch.Stop();
-        Trace.WriteLine($"[TRACE] AddTask: Operation completed in {stopwatch.ElapsedMilliseconds} ms.");
-    }
-
-    public void RemoveTask(int index)
-    {
-        var stopwatch = Stopwatch.StartNew();
-        Trace.WriteLine($"[TRACE] RemoveTask: Started removing task at index {index}.");
-
-        if (index < 0 || index >= _tasks.Count)
+        try
         {
-            var errorInfo = new { AttemptedIndex = index, Timestamp = DateTime.UtcNow };
-            _logger.LogError("Attempted to remove invalid task index: {@ErrorInfo}", errorInfo);
-            Trace.WriteLine($"[TRACE] RemoveTask: Error - Invalid task index {index}.");
-            throw new ArgumentOutOfRangeException(nameof(index), $"Invalid task index: {index}");
+            if (string.IsNullOrWhiteSpace(request.Title))
+            {
+                throw new ArgumentException("Task title cannot be empty.");
+            }
+
+            var task = new TaskModel
+            {
+                Title = request.Title,
+                Description = request.Description,
+                Priority = request.Priority
+            };
+
+            _tasks.Add(task);
+
+            _logger.LogInformation("Task added: {@Task}", task);
+            Trace.WriteLine($"[TRACE] AddTask: Task '{request.Title}' added successfully.");
+
+            return task;
         }
-
-        var removedTask = _tasks[index];
-        var taskInfo = new { TaskName = removedTask, Index = index, Timestamp = DateTime.UtcNow };
-        _tasks.RemoveAt(index);
-
-        _logger.LogInformation("Task removed: {@TaskInfo}", taskInfo);
-        Trace.WriteLine($"[TRACE] RemoveTask: Task '{removedTask}' at index {index} removed successfully.");
-
-        stopwatch.Stop();
-        Trace.WriteLine($"[TRACE] RemoveTask: Operation completed in {stopwatch.ElapsedMilliseconds} ms.");
+        catch (Exception ex)
+        {
+            _logger.LogError(ex, "Error while adding task: {TaskTitle}", request.Title);
+            Trace.WriteLine($"[TRACE] AddTask: Error occurred while adding task '{request.Title}'. Error: {ex.Message}");
+            throw;
+        }
+        finally
+        {
+            stopwatch.Stop();
+            Trace.WriteLine($"[TRACE] AddTask: Operation completed in {stopwatch.ElapsedMilliseconds} ms.");
+        }
     }
 
-    public List<string> ListTasks()
+    public void RemoveTask(Guid id)
+    {
+        var stopwatch = Stopwatch.StartNew();
+        Trace.WriteLine($"[TRACE] RemoveTask: Started removing task with ID {id}.");
+
+        try
+        {
+            var task = _tasks.FirstOrDefault(t => t.Id == id);
+
+            if (task == null)
+            {
+                _logger.LogWarning("Attempted to remove non-existent task with ID: {TaskId}", id);
+                Trace.WriteLine($"[TRACE] RemoveTask: Warning - Task with ID {id} not found.");
+                throw new KeyNotFoundException($"Task with ID {id} not found.");
+            }
+
+            _tasks.Remove(task);
+
+            _logger.LogInformation("Task removed: {@Task}", task);
+            Trace.WriteLine($"[TRACE] RemoveTask: Task '{task.Title}' with ID {id} removed successfully.");
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError(ex, "Error while removing task with ID: {TaskId}", id);
+            Trace.WriteLine($"[TRACE] RemoveTask: Error occurred while removing task with ID {id}. Error: {ex.Message}");
+            throw;
+        }
+        finally
+        {
+            stopwatch.Stop();
+            Trace.WriteLine($"[TRACE] RemoveTask: Operation completed in {stopwatch.ElapsedMilliseconds} ms.");
+        }
+    }
+
+    public List<TaskModel> ListTasks()
     {
         var stopwatch = Stopwatch.StartNew();
         Trace.WriteLine("[TRACE] ListTasks: Started listing tasks.");
 
-        var tasksInfo = new { Tasks = _tasks, Count = _tasks.Count, Timestamp = DateTime.UtcNow };
-
-        if (_tasks.Count == 0)
+        try
         {
-            _logger.LogInformation("No tasks available: {@TasksInfo}", tasksInfo);
-            Trace.WriteLine("[TRACE] ListTasks: No tasks available.");
+            _logger.LogInformation("Listing tasks: {@Tasks}", _tasks);
+            Trace.WriteLine($"[TRACE] ListTasks: Listed {_tasks.Count} tasks successfully.");
+
+            return _tasks;
         }
-        else
+        catch (Exception ex)
         {
-            _logger.LogInformation("Listing tasks: {@TasksInfo}", tasksInfo);
-            Trace.WriteLine($"[TRACE] ListTasks: Listed {tasksInfo.Count} tasks successfully.");
+            _logger.LogError(ex, "Error while listing tasks.");
+            Trace.WriteLine($"[TRACE] ListTasks: Error occurred while listing tasks. Error: {ex.Message}");
+            throw;
         }
-
-        stopwatch.Stop();
-        Trace.WriteLine($"[TRACE] ListTasks: Operation completed in {stopwatch.ElapsedMilliseconds} ms.");
-
-        return _tasks;
+        finally
+        {
+            stopwatch.Stop();
+            Trace.WriteLine($"[TRACE] ListTasks: Operation completed in {stopwatch.ElapsedMilliseconds} ms.");
+        }
     }
 }
